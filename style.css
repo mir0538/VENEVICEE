@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* link */
+a:link {
+	text-decoration: none;
+	color: #9bc1ff;
+}
+a:visited {
+	text-decoration: none;
+	color: #9bc1ff;
+}
+a:active {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #f00;
+	cursor: pointer;
+}
+
+/* styles for base tags */
+div, td {
+	font-family: Segoe UI, verdana, tahoma;
+	font-size: 9pt;
+	vertical-align: top;
+}
+td {
+	padding-left: 0;
+}
+ul, li {
+	line-height: 160%;
+	margin-left: 15px;
+}
+h4 {
+	font-size: 10pt;
+	margin-bottom: 10px;
+}
+
+#container {
+}
+
+/* 
+ * size of contents
+ */
+#box {
+	width: 900px;
+}
+
+#header {
+	margin:0px;
+	padding:0px;
+	height: 120px;
+	vertical-align: middle;
+	padding-left: 30px;
+	color: #ffffff;
+	font-family: Segoe UI, verdana, tahoma;
+
+	/* gradient */
+	background: #ac0000; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#ac0000', endColorstr='#ffffff'); /* for IE */
+	background: -webkit-gradient(linear, left top, right top, from(#ac000), to(#fff)); /* for webkit browsers */
+	background: -moz-linear-gradient(left,  #ac0000,  #fff); /* for firefox 3.6+ */
+}
+#tail {
+	margin-top:10px;
+	padding: 0px;
+}
+
+/* 
+ * menu
+ *     <div id="menu">
+ *         <a><div>name</div></a> <!-- element -->
+ *         ...
+ *     </div>
+ */
+
+#contents {
+	padding: 10px;
+}
+
+/* toc */
+#title {
+	margin-left:30px;
+	margin-top:15px;
+	color: #333;
+	font-weight: bold;
+	font-size: 20pt;
+}
+#section {
+	font-weight: bold;
+	margin-left:40px;
+	margin-right:30px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color: #993300;
+	font-size: 12pt;
+}
+
+/* box for highlight */
+#red_box {
+	background-color: #FFD6D5;
+	border: 1px dashed #B91A4D;
+	padding: 5px;
+	font-size: 9pt;
+}
+
+/* program */
+#tbl {
+	background-color: #f4f4f4;
+	text-align: center;
+	border: 1px dotted #c33;
+	line-height: 120%;
+/* For <TABLE> tag. Set cellpadding property to zero and cellspacing property to two. */
+}
+#tbl td {
+	padding: 3px;
+	background-color: #fdfdfd;
+	border: 1px dotted #c33;
+	text-align: center;
+	font-size: 8pt;
+	vertical-align: middle;
+	min-width: 100px;
+}
+#tbl div {
+	padding: 3px;
+	background-color: #fdfdfd;
+	border-bottom: 1px dashed #c33;
+	text-align: left;
+	font-size: 8pt;
+}
